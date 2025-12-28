@@ -1,0 +1,273 @@
+PROJECT NAME: schoolportal
+SYSTEM TYPE: Web-Based School Information & Management System
+VERSION: 1.0
+STATUS: Planning & Requirements Phase
+
+============================================================
+1. SYSTEM PURPOSE
+============================================================
+schoolportal is a web-based platform designed to help schools
+digitize academic, administrative, and communication processes.
+The system will support students, teachers, administrators,
+parents, and school management.
+
+Primary goals:
+- Centralized student data storage
+- Improve communication
+- Support academic & administrative operations
+- Enable secure user access
+- Support multiple schools in future
+
+============================================================
+2. SYSTEM USERS (ROLES)
+============================================================
+1. Super Admin (System Owner)
+2. School Admin (Principal / Registrar)
+3. Teachers
+4. Students
+5. Parents / Guardians
+6. Support Staff (optional)
+
+Each user will have role-based access permissions.
+
+============================================================
+3. PORTAL HOMEPAGE TABS / MAIN NAVIGATION
+============================================================
+The portal homepage will include the following tabs:
+
+1. Home
+2. About
+3. Features / Modules
+4. Admission / Enrollment
+5. Academics
+6. Students Portal (Login)
+7. Teachers Portal (Login)
+8. Parents Portal (Login)
+9. Admin Portal (Login)
+10. Contact / Support
+11. Announcements / Noticeboard
+
+============================================================
+4. HOME PAGE CONTENT
+============================================================
+- System name: schoolportal
+- Short description
+- Hero banner / school-friendly theme
+- Quick links to portals
+- Features overview
+- Call-to-action buttons
+- Testimonials (future)
+- Footer with copyright
+
+============================================================
+5. CORE SYSTEM MODULES
+============================================================
+
+------------------------------------------------------------
+5.1 SCHOOL MANAGEMENT
+------------------------------------------------------------
+✔ School profile
+✔ Departments
+✔ Classes / Streams
+✔ Terms / Semesters
+✔ Academic Calendar
+✔ Class timetables
+
+------------------------------------------------------------
+5.2 STUDENT MANAGEMENT
+------------------------------------------------------------
+✔ Student registration
+✔ Admission numbers
+✔ Class allocation
+✔ Profile details
+✔ Parent/Guardian link
+✔ Health/emergency info
+✔ Document uploads
+✔ Transfer history
+✔ Active / Alumni status
+
+------------------------------------------------------------
+5.3 TEACHER MANAGEMENT
+------------------------------------------------------------
+✔ Teacher profiles
+✔ Subjects assignment
+✔ Attendance records
+✔ Workload tracking
+✔ Payroll (optional future)
+
+------------------------------------------------------------
+5.4 PARENT / GUARDIAN MODULE
+------------------------------------------------------------
+✔ Linked to students
+✔ View performance
+✔ View attendance
+✔ Receive messages
+✔ Announcements access
+
+------------------------------------------------------------
+5.5 ACADEMICS & GRADING
+------------------------------------------------------------
+✔ Subjects & grading system
+✔ CA / Exams entry
+✔ Marks processing
+✔ Grade boundaries
+✔ Report card generation (PDF)
+✔ Class performance analytics
+✔ Ranking (optional)
+✔ Teacher remarks
+
+------------------------------------------------------------
+5.6 ATTENDANCE MODULE
+------------------------------------------------------------
+✔ Daily student attendance
+✔ Teacher attendance
+✔ Reasons for absence
+✔ Attendance summary
+✔ Parent notifications
+
+------------------------------------------------------------
+5.7 FEES & FINANCE
+------------------------------------------------------------
+✔ Fee structure setup
+✔ Payment records
+✔ Balance tracking
+✔ Receipts
+✔ Income summary reports
+✔ Debtors list
+✔ Export to Excel/PDF
+
+------------------------------------------------------------
+5.8 COMMUNICATION MODULE
+------------------------------------------------------------
+✔ Internal messaging
+✔ Email / SMS integration (future)
+✔ School announcements
+✔ Event alerts
+
+------------------------------------------------------------
+5.9 DISCIPLINE MANAGEMENT
+------------------------------------------------------------
+✔ Case reporting
+✔ Actions taken
+✔ Student behavior records
+
+------------------------------------------------------------
+5.10 LIBRARY (FUTURE PHASE)
+------------------------------------------------------------
+✔ Book catalog
+✔ Issuing records
+✔ Overdue alerts
+
+------------------------------------------------------------
+5.11 HOSTEL (OPTIONAL)
+------------------------------------------------------------
+✔ Room allocation
+✔ Attendance
+✔ Wardens
+
+------------------------------------------------------------
+5.12 TRANSPORT (OPTIONAL)
+------------------------------------------------------------
+✔ Routes
+✔ Assigned students
+✔ Fee management
+
+------------------------------------------------------------
+5.13 EXTRACURRICULAR
+------------------------------------------------------------
+✔ Clubs & activities
+✔ Membership lists
+✔ Achievements
+
+------------------------------------------------------------
+5.14 DOCUMENT MANAGEMENT
+------------------------------------------------------------
+✔ Upload & store files
+✔ Student letters
+✔ Transcripts
+✔ Certificates
+
+------------------------------------------------------------
+5.15 REPORTING & ANALYTICS
+------------------------------------------------------------
+✔ Class performance
+✔ Attendance stats
+✔ Fee reports
+✔ Gender distribution
+✔ Enrolment trends
+✔ Export to PDF/Excel
+
+============================================================
+6. USER AUTHENTICATION & SECURITY
+============================================================
+✔ Secure login
+✔ Role-based permissions
+✔ Password reset
+✔ Two-factor (future)
+✔ Audit logs
+✔ School data isolation
+✔ GDPR-style protection
+
+============================================================
+7. CONTACT & SUPPORT PAGE
+============================================================
+✔ Contact form (backend)
+✔ Admin email notifications
+✔ Support info
+✔ Office address (optional)
+
+============================================================
+8. PORTAL LOGIN SECTIONS
+============================================================
+1. Student Login
+2. Teacher Login
+3. Parent Login
+4. Admin Login
+5. Super Admin Login
+
+Each dashboard will be different.
+
+============================================================
+9. DESIGN & THEME
+============================================================
+✔ Professional school theme
+✔ Clean interface
+✔ School-friendly colors
+✔ Mobile responsive
+✔ Accessible UI
+
+Color preferences:
+- Navy blue
+- White
+- Soft green
+- Education-style palette
+
+============================================================
+10. FUTURE EXPANSIONS
+============================================================
+✔ Mobile App
+✔ Multi-school support
+✔ Payment integrations
+✔ Biometric attendance
+✔ AI analytics
+
+============================================================
+11. NON-FUNCTIONAL REQUIREMENTS
+============================================================
+✔ Secure data storage
+✔ Reliable backups
+✔ Good performance
+✔ Easy usability
+✔ Scalable system architecture
+
+============================================================
+12. DEPLOYMENT TARGET
+============================================================
+Platform: Render / Cloud hosting
+Backend: Django
+Database: PostgreSQL
+Frontend: HTML/CSS/JS & bootsrap
+
+============================================================
+END OF FILE
+============================================================
