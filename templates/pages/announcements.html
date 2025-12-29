@@ -1,0 +1,300 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Announcements - SchoolPortal{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-header-title">Announcements & Noticeboard</h1>
+        <div class="page-header-breadcrumb">
+            <a href="{% url 'home' %}">Home</a>
+            <span>/</span>
+            <span>Announcements</span>
+        </div>
+    </div>
+</section>
+
+<!-- Announcements List -->
+<section class="section section-light">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Main Content -->
+            <div class="col-lg-8">
+                <h2 class="section-title mb-4">Latest News & Updates</h2>
+
+                <!-- Announcement 1 -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 text-center me-4">
+                                <div class="bg-primary text-white rounded px-3 py-2">
+                                    <div class="fs-3 fw-bold lh-1">28</div>
+                                    <div class="small">Dec</div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-success mb-2">Important</span>
+                                <h4 class="mb-2">Term 1 Registration Now Open</h4>
+                                <p class="text-muted mb-3">
+                                    Registration for the new academic year 2025 is now open. Parents and guardians
+                                    are encouraged to complete the registration process before January 15th to secure
+                                    their children's places. Early registration ensures proper class allocation and
+                                    uniform preparation.
+                                </p>
+                                <div class="d-flex align-items-center text-muted small">
+                                    <i class="bi bi-person me-1"></i>
+                                    <span class="me-3">Admin</span>
+                                    <i class="bi bi-clock me-1"></i>
+                                    <span>December 28, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Announcement 2 -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 text-center me-4">
+                                <div class="bg-primary text-white rounded px-3 py-2">
+                                    <div class="fs-3 fw-bold lh-1">25</div>
+                                    <div class="small">Dec</div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-warning text-dark mb-2">Holiday Notice</span>
+                                <h4 class="mb-2">Festive Season Holiday</h4>
+                                <p class="text-muted mb-3">
+                                    The school will be closed for the festive season from December 23rd to January 2nd.
+                                    We wish all our students, parents, and staff a wonderful holiday season. Classes
+                                    will resume on January 6th, 2025.
+                                </p>
+                                <div class="d-flex align-items-center text-muted small">
+                                    <i class="bi bi-person me-1"></i>
+                                    <span class="me-3">Admin</span>
+                                    <i class="bi bi-clock me-1"></i>
+                                    <span>December 25, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Announcement 3 -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 text-center me-4">
+                                <div class="bg-primary text-white rounded px-3 py-2">
+                                    <div class="fs-3 fw-bold lh-1">20</div>
+                                    <div class="small">Dec</div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-info mb-2">Results</span>
+                                <h4 class="mb-2">End of Term Examination Results Published</h4>
+                                <p class="text-muted mb-3">
+                                    End of term examination results are now available on the student and parent portals.
+                                    Log in to your account to view detailed performance reports and download report
+                                    cards.
+                                    For any queries regarding results, please contact your class teacher.
+                                </p>
+                                <div class="d-flex align-items-center text-muted small">
+                                    <i class="bi bi-person me-1"></i>
+                                    <span class="me-3">Academic Office</span>
+                                    <i class="bi bi-clock me-1"></i>
+                                    <span>December 20, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Announcement 4 -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 text-center me-4">
+                                <div class="bg-primary text-white rounded px-3 py-2">
+                                    <div class="fs-3 fw-bold lh-1">15</div>
+                                    <div class="small">Dec</div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-secondary mb-2">Event</span>
+                                <h4 class="mb-2">Annual Sports Day Success</h4>
+                                <p class="text-muted mb-3">
+                                    We are pleased to announce that this year's Sports Day was a tremendous success.
+                                    Congratulations to all winners and participants. Special thanks to parents and
+                                    teachers who made this event possible. Photos are available on our social media
+                                    pages.
+                                </p>
+                                <div class="d-flex align-items-center text-muted small">
+                                    <i class="bi bi-person me-1"></i>
+                                    <span class="me-3">Sports Department</span>
+                                    <i class="bi bi-clock me-1"></i>
+                                    <span>December 15, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Announcement 5 -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 text-center me-4">
+                                <div class="bg-primary text-white rounded px-3 py-2">
+                                    <div class="fs-3 fw-bold lh-1">10</div>
+                                    <div class="small">Dec</div>
+                                </div>
+                            </div>
+                            <div class="flex-grow-1">
+                                <span class="badge bg-danger mb-2">Reminder</span>
+                                <h4 class="mb-2">Fee Payment Reminder</h4>
+                                <p class="text-muted mb-3">
+                                    This is a reminder to all parents to clear any outstanding fee balances before
+                                    the end of the term. Students with fee arrears may not receive their report cards.
+                                    Please visit the bursar's office or use our online payment options.
+                                </p>
+                                <div class="d-flex align-items-center text-muted small">
+                                    <i class="bi bi-person me-1"></i>
+                                    <span class="me-3">Finance Office</span>
+                                    <i class="bi bi-clock me-1"></i>
+                                    <span>December 10, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Search -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3">
+                            <i class="bi bi-search text-primary me-2"></i>Search
+                        </h5>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search announcements...">
+                            <button class="btn btn-primary" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3">
+                            <i class="bi bi-tag text-primary me-2"></i>Categories
+                        </h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2 d-flex justify-content-between">
+                                <a href="#" class="text-decoration-none">All Announcements</a>
+                                <span class="badge bg-light text-dark">24</span>
+                            </li>
+                            <li class="mb-2 d-flex justify-content-between">
+                                <a href="#" class="text-decoration-none">Academic</a>
+                                <span class="badge bg-light text-dark">8</span>
+                            </li>
+                            <li class="mb-2 d-flex justify-content-between">
+                                <a href="#" class="text-decoration-none">Events</a>
+                                <span class="badge bg-light text-dark">6</span>
+                            </li>
+                            <li class="mb-2 d-flex justify-content-between">
+                                <a href="#" class="text-decoration-none">Holidays</a>
+                                <span class="badge bg-light text-dark">4</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <a href="#" class="text-decoration-none">Fees & Finance</a>
+                                <span class="badge bg-light text-dark">6</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3">
+                            <i class="bi bi-calendar-event text-primary me-2"></i>Upcoming Events
+                        </h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3 pb-3 border-bottom">
+                                <small class="text-primary fw-bold">Jan 6, 2025</small>
+                                <div>Term 1 Classes Begin</div>
+                            </li>
+                            <li class="mb-3 pb-3 border-bottom">
+                                <small class="text-primary fw-bold">Jan 15, 2025</small>
+                                <div>Registration Deadline</div>
+                            </li>
+                            <li class="mb-3 pb-3 border-bottom">
+                                <small class="text-primary fw-bold">Feb 14, 2025</small>
+                                <div>Parents Meeting</div>
+                            </li>
+                            <li>
+                                <small class="text-primary fw-bold">Mar 1, 2025</small>
+                                <div>Mid-Term Exams Start</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="card shadow-sm bg-primary text-white">
+                    <div class="card-body p-4">
+                        <h5 class="card-title mb-3">
+                            <i class="bi bi-link-45deg me-2"></i>Quick Links
+                        </h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">
+                                <a href="{% url 'student_portal' %}" class="text-white text-decoration-none">
+                                    <i class="bi bi-arrow-right me-2"></i>Student Portal
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="{% url 'parent_portal' %}" class="text-white text-decoration-none">
+                                    <i class="bi bi-arrow-right me-2"></i>Parent Portal
+                                </a>
+                            </li>
+                            <li class="mb-2">
+                                <a href="{% url 'admission' %}" class="text-white text-decoration-none">
+                                    <i class="bi bi-arrow-right me-2"></i>Apply for Admission
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'contact' %}" class="text-white text-decoration-none">
+                                    <i class="bi bi-arrow-right me-2"></i>Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,262 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contact Us - SchoolPortal{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-header-title">Contact & Support</h1>
+        <div class="page-header-breadcrumb">
+            <a href="{% url 'home' %}">Home</a>
+            <span>/</span>
+            <span>Contact</span>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="section section-light">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Contact Form -->
+            <div class="col-lg-8">
+                <h2 class="section-title mb-4">Get In Touch</h2>
+                <p class="text-muted mb-4">
+                    Have a question or need assistance? Fill out the form below and we'll get back to you
+                    as soon as possible.
+                </p>
+
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <form class="contact-form needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" placeholder="your@email.com" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" placeholder="+254 700 000 000">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Subject *</label>
+                                    <select class="form-select" required>
+                                        <option value="">Select a topic</option>
+                                        <option value="admission">Admission Inquiry</option>
+                                        <option value="academic">Academic Information</option>
+                                        <option value="fees">Fees & Payment</option>
+                                        <option value="technical">Technical Support</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">Message *</label>
+                                    <textarea class="form-control" rows="5" placeholder="How can we help you?"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-send me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info Sidebar -->
+            <div class="col-lg-4">
+                <h4 class="mb-4">Contact Information</h4>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Address</h6>
+                        <p class="text-muted mb-0">123 Education Street<br>City, Country</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Phone</h6>
+                        <p class="text-muted mb-0">
+                            Main: +254 700 000 000<br>
+                            Admissions: +254 700 000 001
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Email</h6>
+                        <p class="text-muted mb-0">
+                            info@schoolportal.com<br>
+                            admissions@schoolportal.com
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                        <i class="bi bi-clock"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Office Hours</h6>
+                        <p class="text-muted mb-0">
+                            Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: 8:00 AM - 12:00 PM
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="mt-4 pt-4 border-top">
+                    <h6 class="mb-3">Follow Us</h6>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-danger btn-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary btn-sm">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-danger btn-sm">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section (Placeholder) -->
+<section class="section-gray py-0">
+    <div class="bg-light" style="height: 400px;">
+        <div class="d-flex align-items-center justify-content-center h-100">
+            <div class="text-center text-muted">
+                <i class="bi bi-geo-alt display-1 mb-3"></i>
+                <h4>Map Location</h4>
+                <p>Google Maps integration will be added here</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common questions</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                How do I apply for admission?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                You can apply online through our Admission page or visit our school office to collect
+                                a physical application form. Complete the form with all required documents and submit
+                                before the deadline.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                How can I check my child's grades?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Parents can access their child's grades through the Parent Portal. Login with your
+                                credentials provided during registration to view academic performance, attendance,
+                                and other information.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                What are the school fees payment options?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Fees can be paid via bank transfer, mobile money (M-Pesa), or at the school bursar's
+                                office. We also offer installment payment plans. Contact our finance office for more
+                                details.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 mb-3 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                How can I reset my portal password?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Click on "Forgot Password" on the login page and enter your registered email address.
+                                You will receive a password reset link. If you continue to have issues, contact the
+                                IT support team.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 shadow-sm">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                Does the school offer transport services?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-muted">
+                                Yes, we offer school transport services covering various routes. Transport fees are
+                                charged separately based on the route. Contact our transport office for available
+                                routes and fees.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

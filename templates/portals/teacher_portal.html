@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Teacher Portal Login - SchoolPortal{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header" style="background: var(--sp-gradient-secondary);">
+    <div class="container">
+        <h1 class="page-header-title">Teacher Portal</h1>
+        <div class="page-header-breadcrumb">
+            <a href="{% url 'home' %}">Home</a>
+            <span>/</span>
+            <span>Teacher Login</span>
+        </div>
+    </div>
+</section>
+
+<!-- Login Form -->
+<section class="section section-gray">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-5">
+                <div class="login-card">
+                    <div class="login-header" style="background: var(--sp-gradient-secondary);">
+                        <div class="portal-icon teacher mx-auto mb-3" style="background: rgba(255,255,255,0.2);">
+                            <i class="bi bi-person-workspace"></i>
+                        </div>
+                        <h3 class="mb-1 text-white">Teacher Login</h3>
+                        <p class="mb-0 text-white opacity-75">Access your teaching dashboard</p>
+                    </div>
+
+                    <div class="login-body">
+                        <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label">Staff ID / Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter staff ID or email"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                    <input type="password" class="form-control" placeholder="Enter password" required>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="remember">
+                                    <label class="form-check-label" for="remember">Remember me</label>
+                                </div>
+                                <a href="#" class="text-decoration-none">Forgot password?</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-success w-100 btn-lg mb-3">
+                                <i class="bi bi-box-arrow-in-right me-2"></i>Login
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="login-footer">
+                        <p class="mb-0 text-muted small">
+                            Need help? <a href="{% url 'contact' %}">Contact IT Support</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Teacher Portal Features -->
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Teacher Dashboard Features</h2>
+            <p class="section-subtitle">Tools to manage your classes effectively</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 col-lg-3">
+                <div class="text-center">
+                    <div class="feature-icon green mx-auto mb-3">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h5>My Classes</h5>
+                    <p class="text-muted small">View and manage your assigned classes</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                    <h5>Enter Grades</h5>
+                    <p class="text-muted small">Submit student marks and assessments</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="text-center">
+                    <div class="feature-icon green mx-auto mb-3">
+                        <i class="bi bi-calendar-check"></i>
+                    </div>
+                    <h5>Attendance</h5>
+                    <p class="text-muted small">Take and view attendance records</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h5>Reports</h5>
+                    <p class="text-muted small">Generate class performance reports</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

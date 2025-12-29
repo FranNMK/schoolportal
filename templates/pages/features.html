@@ -1,0 +1,306 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Features - SchoolPortal{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-header-title">Features & Modules</h1>
+        <div class="page-header-breadcrumb">
+            <a href="{% url 'home' %}">Home</a>
+            <span>/</span>
+            <span>Features</span>
+        </div>
+    </div>
+</section>
+
+<!-- Features Overview -->
+<section class="section section-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Comprehensive School Management</h2>
+            <p class="section-subtitle">Everything you need to run a modern school efficiently</p>
+        </div>
+
+        <!-- School Management -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-3">Core Module</span>
+                <h3 class="h2 mb-4">School Management</h3>
+                <p class="text-muted mb-4">
+                    Complete school administration with support for multiple departments,
+                    classes, terms, and academic calendars.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>School Profile Management</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Departments & Classes Setup
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Terms & Semesters Configuration
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Academic Calendar</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Class Timetables</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-5 text-center">
+                    <i class="bi bi-building text-primary" style="font-size: 8rem;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Management -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+            <div class="col-lg-6">
+                <span class="badge bg-success mb-3">Core Module</span>
+                <h3 class="h2 mb-4">Student Management</h3>
+                <p class="text-muted mb-4">
+                    Comprehensive student information system with registration, profiles,
+                    and complete academic history tracking.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Student Registration & Profiles
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Admission Number Generation
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Class Allocation</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Parent/Guardian Linking</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Health & Emergency Information
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Document Uploads</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Transfer History</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-5 text-center">
+                    <i class="bi bi-people-fill text-success" style="font-size: 8rem;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teacher Management -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-3">Core Module</span>
+                <h3 class="h2 mb-4">Teacher Management</h3>
+                <p class="text-muted mb-4">
+                    Manage teacher profiles, subject assignments, and workload tracking
+                    for efficient staff management.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Teacher Profiles</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Subject Assignment</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Attendance Records</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Workload Tracking</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Payroll Integration (Future)
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-5 text-center">
+                    <i class="bi bi-person-workspace text-primary" style="font-size: 8rem;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academics & Grading -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+            <div class="col-lg-6">
+                <span class="badge bg-success mb-3">Core Module</span>
+                <h3 class="h2 mb-4">Academics & Grading</h3>
+                <p class="text-muted mb-4">
+                    Complete academic management with grading systems, mark entry,
+                    and automated report card generation.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Subjects & Grading System</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>CA / Exams Entry</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Marks Processing</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Grade Boundaries</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Report Card Generation (PDF)
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Class Performance Analytics
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Teacher Remarks</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-5 text-center">
+                    <i class="bi bi-journal-check text-success" style="font-size: 8rem;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Attendance Module -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-3">Core Module</span>
+                <h3 class="h2 mb-4">Attendance Tracking</h3>
+                <p class="text-muted mb-4">
+                    Daily attendance management with absence tracking and automated
+                    parent notifications.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Daily Student Attendance</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Teacher Attendance</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Reasons for Absence</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Attendance Summary Reports</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Parent Notifications</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-5 text-center">
+                    <i class="bi bi-calendar-check text-primary" style="font-size: 8rem;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fees & Finance -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom flex-lg-row-reverse">
+            <div class="col-lg-6">
+                <span class="badge bg-success mb-3">Finance Module</span>
+                <h3 class="h2 mb-4">Fees & Finance</h3>
+                <p class="text-muted mb-4">
+                    Complete financial management with fee tracking, payment records,
+                    and comprehensive reporting.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Fee Structure Setup</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Payment Records</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Balance Tracking</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Receipt Generation</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Debtors List</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Export to Excel/PDF</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-5 text-center">
+                    <i class="bi bi-cash-stack text-success" style="font-size: 8rem;"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reports & Analytics -->
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <span class="badge bg-primary mb-3">Analytics Module</span>
+                <h3 class="h2 mb-4">Reports & Analytics</h3>
+                <p class="text-muted mb-4">
+                    Powerful analytics and reporting tools to track performance
+                    and make data-driven decisions.
+                </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Class Performance Analytics
+                    </li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Attendance Statistics</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Fee Reports</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Gender Distribution</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Enrollment Trends</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Export to PDF/Excel</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-light rounded-4 p-5 text-center">
+                    <i class="bi bi-graph-up-arrow text-primary" style="font-size: 8rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Additional Features Grid -->
+<section class="section section-gray">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Additional Modules</h2>
+            <p class="section-subtitle">More features to enhance your school operations</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <h3 class="feature-title">Communication</h3>
+                    <p class="feature-text">
+                        Internal messaging, announcements, and event alerts for seamless communication.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i class="bi bi-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="feature-title">Discipline Management</h3>
+                    <p class="feature-text">
+                        Track and manage disciplinary cases with detailed records and actions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-book"></i>
+                    </div>
+                    <h3 class="feature-title">Library (Coming Soon)</h3>
+                    <p class="feature-text">
+                        Book catalog, issuing records, and overdue alerts for library management.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i class="bi bi-house-door"></i>
+                    </div>
+                    <h3 class="feature-title">Hostel (Optional)</h3>
+                    <p class="feature-text">
+                        Room allocation, attendance tracking, and warden management.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="bi bi-bus-front"></i>
+                    </div>
+                    <h3 class="feature-title">Transport (Optional)</h3>
+                    <p class="feature-text">
+                        Routes management, student assignments, and transport fee tracking.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <i class="bi bi-trophy"></i>
+                    </div>
+                    <h3 class="feature-title">Extracurricular</h3>
+                    <p class="feature-text">
+                        Clubs, activities, membership lists, and achievements tracking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background: var(--sp-gradient-primary);">
+    <div class="container text-center text-white py-3">
+        <h2 class="fw-bold mb-3">Ready to Experience These Features?</h2>
+        <p class="mb-4 opacity-75">Get started with SchoolPortal today</p>
+        <a href="{% url 'contact' %}" class="btn btn-success btn-lg px-5">
+            <i class="bi bi-telephone me-2"></i>Contact Us
+        </a>
+    </div>
+</section>
+{% endblock %}
